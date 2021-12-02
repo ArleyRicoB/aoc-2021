@@ -13,7 +13,7 @@ const calculate = () => {
   let counter = 0, previousSum = 0;
 
   for (let i = 0; i < n - k + 1; i++) {
-    const sum = numbers.slice(i, i + k).reduce((a, b) => a + b, 0);
+    const sum = numbers[i] + numbers[i + 1] + numbers[i + 2];
     if ((sum > previousSum) && (i > 0)) counter++;
     previousSum = sum;
   }
