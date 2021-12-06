@@ -18,6 +18,7 @@ const calculate = () => {
     return acc;
   }, {});
 
+  // any
   let gammaRate = '', epsilonRate = '';
   for (let i = 0; i < maxLength; i++) {
     if (binary[i] >= middle) {
